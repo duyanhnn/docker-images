@@ -1,0 +1,32 @@
+version: '3'
+services:
+
+  neo4j_database:
+    image: neo4j:3.4.4
+    env_file:
+    - ./.env
+    environment:
+      NEO4J_AUTH: neo4j/12345
+    #build: ./
+    ports:
+    - 7473:7473
+    - 7474:7474
+    - 7687:7687
+    cap_add:
+    - SYS_RESOURCE
+    volumes:
+    - ./data/databases/graph.db:/data/databases/graph.db
+    - ./conf:/conf
+    restart: always
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+    networks:
+      icopnet:
+        aliases:
+        - icop_neo4j_database
+
+networks:
+  icopnet:
+    driver: bridge
