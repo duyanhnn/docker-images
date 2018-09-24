@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo 'Setting up temp directory...'
-mkdir tmp
+mkdir ~/tmp
 sudo echo 'export TMPDIR=$HOME/tmp' >> ~/.bash_profile
 source ~/.bash_profile
 echo 'Done setting up temp directory'
