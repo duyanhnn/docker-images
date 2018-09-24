@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 echo 'Setting up locale and language.'
-sudo echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bash_profile
-sudo echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
-sudo echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
-sudo echo 'export LC_TYPE=en_US.UTF-8' >> ~/.bash_profile
-sudo echo '/var/swap.1	swap	swap	defaults		0	0' >> /etc/fstab
+# sudo echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bash_profile
+# sudo echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
+# sudo echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
+# sudo echo 'export LC_TYPE=en_US.UTF-8' >> ~/.bash_profile
+# sudo echo '/var/swap.1	swap	swap	defaults		0	0' >> /etc/fstab
+sudo apt-get install -y language-pack-UTF-8
 echo 'Done setting up locale and language.'
 echo 'Setting up swap memory, this might take a long time, please wait...'
 sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=5120
