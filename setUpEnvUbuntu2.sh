@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo 'Setting up swap memory.'
-sudo mount /dev/xvda2 /mnt
+sudo mount /dev/xvda1 /mnt
 sudo dd if=/dev/zero of=/mnt/swapfile bs=1M count=5120
 sudo chown root:root /mnt/swapfile
 sudo chmod 600 /mnt/swapfile
