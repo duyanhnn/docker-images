@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 echo 'Setting up swap memory.'
-sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=5012
+sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=5120
 sudo /sbin/mkswap /var/swap.1
 sudo chmod 600 /var/swap.1
 sudo /sbin/swapon /var/swap.1
 sudo echo '' >> /etc/fstab
 sudo echo '/var/swap.1	swap	swap	defaults		0	0' >> /etc/fstab
-echo echo 'Done setting up swap memory.'
+free -m
+echo 'Done setting up swap memory.'
 sudo apt-get update -y
 sudo apt-get install -y \
     apt-transport-https \

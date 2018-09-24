@@ -13,7 +13,7 @@ sudo echo '/dev/xvda1	/mnt	auto	defaults,nobootwait,comment=cloudconfig		0	2' >>
 sudo echo '/mnt/swapfile	swap	swap	defaults		0	0' >> /etc/fstab
 sudo swapon -a
 free -m
-echo echo 'Done setting up swap memory.'
+echo 'Done setting up swap memory.'
 sudo apt-get update -y
 sudo apt-get install -y \
     apt-transport-https \
