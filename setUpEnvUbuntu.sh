@@ -5,6 +5,7 @@ sudo echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LC_TYPE=en_US.UTF-8' >> ~/.bash_profile
+source ~/.bash_profile
 echo 'Done setting up locale and language.'
 echo 'Setting up swap memory, this might take a long time, please wait...'
 sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=5120
@@ -14,7 +15,7 @@ sudo /sbin/swapon /var/swap.1
 sudo echo '' >> /etc/fstab
 sudo echo '/var/swap.1	swap	swap	defaults		0	0' >> /etc/fstab
 free -m
-echo 'Done setting up swap memory.'
+echo 'Done setting up swap memory, if /etc/fstab was not setted, you have to set it manually! Please see log.'
 sudo apt-get update -y
 sudo apt-get install -y \
     apt-transport-https \

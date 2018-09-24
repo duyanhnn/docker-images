@@ -5,6 +5,7 @@ sudo echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LC_TYPE=en_US.UTF-8' >> ~/.bash_profile
+source ~/.bash_profile
 echo 'Done setting up locale and language.'
 echo 'Setting up swap memory, this might take a long time, please wait...'
 sudo mount /dev/xvda1 /mnt
@@ -19,7 +20,7 @@ sudo echo '/dev/xvda1	/mnt	auto	defaults,nobootwait,comment=cloudconfig		0	2' >>
 sudo echo '/mnt/swapfile	swap	swap	defaults		0	0' >> /etc/fstab
 sudo swapon -a
 free -m
-echo 'Done setting up swap memory.'
+echo 'Done setting up swap memory, if /etc/fstab was not setted, you have to set it manually! Please see log.'
 sudo apt-get update -y
 sudo apt-get install -y \
     apt-transport-https \
