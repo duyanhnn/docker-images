@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+echo 'Setting up temp directory...'
+mkdir tmp
+sudo echo 'export TMPDIR=$HOME/tmp' >> ~/.bash_profile
+source ~/.bash_profile
+echo 'Done setting up temp directory'
 echo 'Setting up locale and language.'
 sudo echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bash_profile
 sudo echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
@@ -9,7 +14,7 @@ source ~/.bash_profile
 echo 'Done setting up locale and language.'
 echo 'Setting up swap memory, this might take a long time, please wait...'
 sudo mount /dev/xvda1 /mnt
-sudo dd if=/dev/zero of=/mnt/swapfile bs=1M count=5120
+sudo dd if=/dev/zero of=/mnt/swapfile bs=1M count=3072
 sudo chown root:root /mnt/swapfile
 sudo chmod 600 /mnt/swapfile
 sudo mkswap /mnt/swapfile
