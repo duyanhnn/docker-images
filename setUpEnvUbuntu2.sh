@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-echo 'Setting up swap memory.'
+echo 'Setting up locale and language.'
+sudo echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bash_profile
+sudo echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
+sudo echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
+sudo echo 'export LC_TYPE=en_US.UTF-8' >> ~/.bash_profile
+sudo echo '/var/swap.1	swap	swap	defaults		0	0' >> /etc/fstab
+echo 'Done setting up locale and language.'
+echo 'Setting up swap memory, this might take a long time, please wait...'
 sudo mount /dev/xvda1 /mnt
 sudo dd if=/dev/zero of=/mnt/swapfile bs=1M count=5120
 sudo chown root:root /mnt/swapfile
