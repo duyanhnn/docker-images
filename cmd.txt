@@ -1,3 +1,5 @@
+sudo apt-get install -y git
+
 git clone -b master https://github.com/duyanhnn/docker-images.git
 
 git clone -b docker/develop https://gitlab.com/citynow/ICOP-Project-Backend.git icop-docker-develop
