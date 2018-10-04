@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+  mongodb_database:
+    build: ./
+    ports:
+    - 27017:27017
+    cap_add:
+    - SYS_RESOURCE
+    volumes:
+    - ./db:/data/db
+    - ./configdb:/data/configdb
+    restart: always
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+    networks:
+      bc2fpnet:
+        aliases:
+        - bc2f_mongodb_database
+
+networks:
+  bc2fpnet:
+    driver: bridge
