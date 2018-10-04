@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+sudo apt-get install -y wget
+echo 'Setting up java evironment...'
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fjavase%2Fdownloads%2Fjdk8-downloads-2133151.html; oraclelicense=accept-securebackup-cookie;" "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz"
+mkdir jdk
+tar -xvzf jdk-8u181-linux-x64.tar.gz -C jdk
+sudo echo 'export JAVA_HOME=~/jdk1.8.0_181' >> ~/.bash_profile
+sudo echo 'export PATH=${PATH}:${JAVA_HOME}/bin' >> ~/.bash_profile
+source ~/.bash_profile
+echo 'Done setting up java evironment'
 # echo 'Setting up temp directory...'
 # mkdir ~/tmp
 # sudo echo 'export TMPDIR=$HOME/tmp' >> ~/.bash_profile
