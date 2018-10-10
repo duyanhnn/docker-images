@@ -1,7 +1,7 @@
 version: '3'
 
 networks:
-  bc2fpnet:
+  taskforcenet:
     driver: bridge
     ipam:
       driver: default
@@ -11,20 +11,22 @@ networks:
 
 services:
 
-  mongodb_database:
+  mssql_database:
+    env_file:
+    - ./.env
     build: ./
     ports:
-    - 27017:27017
+    - 1433:1433
     cap_add:
     - SYS_RESOURCE
-    volumes:
-    - ./db:/data/db
-    - ./configdb:/data/configdb
+#    volumes:
+#    -
+#    -
     restart: always
     logging:
       options:
         max-size: "10m"
         max-file: "10"
     networks:
-      bc2fpnet:
+      taskforcenet:
         ipv4_address: 172.97.97.2

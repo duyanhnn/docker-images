@@ -1,4 +1,14 @@
 version: '3'
+
+networks:
+  icopnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.97.97.0/24
+#        gateway: 172.97.97.1
+
 services:
 
   neo4j_database:
@@ -24,9 +34,4 @@ services:
         max-file: "10"
     networks:
       icopnet:
-        aliases:
-        - icop_neo4j_database
-
-networks:
-  icopnet:
-    driver: bridge
+        ipv4_address: 172.97.97.2
