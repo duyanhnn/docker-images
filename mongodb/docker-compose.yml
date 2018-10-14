@@ -39,4 +39,4 @@ services:
         max-file: "10"
     networks:
       bc2fpnet:
-        ipv4_address: 172.97.97.2
+        ipv4_address: 172.97.97.217
