@@ -1,4 +1,4 @@
-version: '3'
+version: '3.4'
 
 networks:
   icopnet:
@@ -9,15 +9,20 @@ networks:
       - subnet: 172.97.97.0/24
 #        gateway: 172.97.97.1
 
+volumes:
+  data_volume:
+    external: true
+    name: icop_neo4j_data_volume
+  conf_volume:
+    external: true
+    name: icop_neo4j_conf_volume
+
 services:
 
   neo4j_database:
-    image: neo4j:3.4.4
     env_file:
     - ./.env
-    environment:
-      NEO4J_AUTH: neo4j/12345
-    #build: ./
+    build: ./
     ports:
     - 7473:7473
     - 7474:7474
@@ -25,7 +30,9 @@ services:
     cap_add:
     - SYS_RESOURCE
     volumes:
-    - ./data/databases/graph.db:/data/databases/graph.db
+    - data_volume:/data
+    - conf_volume:/conf
+    - ./data:/data
     - ./conf:/conf
     restart: always
     logging:

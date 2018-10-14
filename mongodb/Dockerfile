@@ -4,9 +4,6 @@ MAINTAINER Duy Anh <duyanhnguyenngoc97@gmail.com>
 ADD init.sh /init.sh
 ADD ./dump /
 
-#ENV http_proxy=
-#ENV https_proxy=
-
 RUN \
  chmod +x /init.sh && \
  apt-get update && apt-get dist-upgrade -y && \

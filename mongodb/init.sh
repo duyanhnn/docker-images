@@ -1,11 +1,21 @@
 #!/bin/bash
 
-auth="-u user -p 12345"
+if test -z "$BC2FP_DATABASE_USERNAME"; then
+    echo "BC2FP_DATABASE_USERNAME not defined"
+    exit 1
+fi
+
+if test -z "$BC2FP_DATABASE_PASSWORD"; then
+    echo "BC2FP_DATABASE_PASSWORD not defined"
+    exit 1
+fi
+
+auth="-u $BC2FP_DATABASE_USERNAME -p $BC2FP_DATABASE_USERNAME"
 
 # MONGODB USER CREATION
 (
 echo "setup mongodb auth"
-create_user="if (!db.getUser('bc2fp')) { db.createUser({ user: 'bc2fp', pwd: '12345', roles: [ {role:'readWrite', db:'bc2fp'} ]}) }"
+create_user="if (!db.getUser('$BC2FP_DATABASE_USERNAME')) { db.createUser({ user: '$BC2FP_DATABASE_USERNAME', pwd: '$BC2FP_DATABASE_PASSWORD', roles: [ {role:'readWrite', db:'bc2fp'} ]}) }"
 until mongo bc2fp --eval "$create_user" || mongo bc2fp $auth --eval "$create_user"; do sleep 5; done
 killall mongod
 sleep 1

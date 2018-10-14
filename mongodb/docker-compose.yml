@@ -1,4 +1,4 @@
-version: '3'
+version: '3.4'
 
 networks:
   bc2fpnet:
@@ -9,15 +9,27 @@ networks:
       - subnet: 172.97.97.0/24
 #        gateway: 172.97.97.1
 
+volumes:
+  db_volume:
+    external: true
+    name: bc2fp_mongodb_db_volume
+  configdb_volume:
+    external: true
+    name: bc2fp_mongodb_configdb_volume
+
 services:
 
   mongodb_database:
+    env_file:
+    - ./.env
     build: ./
     ports:
     - 27017:27017
     cap_add:
     - SYS_RESOURCE
     volumes:
+    - db_volume:/data/db
+    - configdb_volume:/data/configdb
     - ./db:/data/db
     - ./configdb:/data/configdb
     restart: always

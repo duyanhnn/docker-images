@@ -1,0 +1,36 @@
+version: '3.4'
+
+networks:
+  taskforcenet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.97.97.0/24
+#        gateway: 172.97.97.1
+
+volumes:
+  mssql_volume:
+    external: true
+    name: taskforce_mssql_volume
+
+services:
+
+  mssql_database:
+    env_file:
+    - ./.env
+    build: ./
+    ports:
+    - 1433:1433
+    cap_add:
+    - SYS_RESOURCE
+    volumes:
+    - mssql_volume:/var/opt/mssql
+    restart: always
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+    networks:
+      taskforcenet:
+        ipv4_address: 172.97.97.2
