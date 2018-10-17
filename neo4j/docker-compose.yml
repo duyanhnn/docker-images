@@ -41,4 +41,4 @@ services:
         max-file: "10"
     networks:
       icopnet:
-        ipv4_address: 172.97.97.74
+        ipv4_address: 172.97.97.2
