@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07254e60-ff61-46db-a026-cf2434bb4d56" name="Default Changelist" comment="msg.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssh/citynow-ec2-?.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ssh/citynow-ec2-?.sh" afterDir="false" />
-    </list>
+    <list default="true" id="07254e60-ff61-46db-a026-cf2434bb4d56" name="Default Changelist" comment="msg." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ssh/citynow-ec2-?.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="77" lean-forward="true" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+            <state relative-caret-position="260">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -304,7 +301,7 @@
       <workItem from="1538904059149" duration="3897000" />
       <workItem from="1538971509698" duration="1111000" />
       <workItem from="1538994727458" duration="10797000" />
-      <workItem from="1539264038788" duration="23790000" />
+      <workItem from="1539264038788" duration="27132000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;msg.&quot;">
       <created>1538650100088</created>
@@ -373,13 +370,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61055000" />
+    <option name="totallyTimeSpent" value="64397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -741,8 +738,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ssh/citynow-ec2-?.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="77" lean-forward="true" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+        <state relative-caret-position="260">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
