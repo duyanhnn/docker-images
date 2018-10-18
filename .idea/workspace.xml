@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07254e60-ff61-46db-a026-cf2434bb4d56" name="Default Changelist" comment="msg.">
-      <change afterPath="$PROJECT_DIR$/ssh/books_production_key.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssh/citynow-ec2-?.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ssh/citynow-ec2-?.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +31,8 @@
           <entry key="env" value="19" />
           <entry key="lock" value="1" />
           <entry key="md" value="12" />
-          <entry key="pem" value="2" />
-          <entry key="sh" value="80" />
+          <entry key="pem" value="5" />
+          <entry key="sh" value="81" />
           <entry key="txt" value="2" />
           <entry key="yml" value="44" />
         </counts>
@@ -41,11 +40,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="19" />
-          <entry key="Bash" value="80" />
+          <entry key="Bash" value="81" />
           <entry key="Dockerfile" value="30" />
           <entry key="Hoi4 file" value="2" />
           <entry key="Markdown" value="12" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="44" />
         </counts>
       </usages-collector>
@@ -57,7 +56,7 @@
           <entry key="Dockerfile" value="80" />
           <entry key="env" value="150" />
           <entry key="md" value="113" />
-          <entry key="sh" value="461" />
+          <entry key="sh" value="509" />
           <entry key="txt" value="33" />
           <entry key="yml" value="316" />
         </counts>
@@ -65,7 +64,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="150" />
-          <entry key="Bash" value="461" />
+          <entry key="Bash" value="509" />
           <entry key="Dockerfile" value="80" />
           <entry key="Hoi4 file" value="28" />
           <entry key="Markdown" value="113" />
@@ -78,29 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neo4j/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ssh/citynow-ec2-?.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssh/books_production_key.pem">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+            <state relative-caret-position="312">
+              <caret line="12" column="77" lean-forward="true" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -207,21 +188,6 @@
             <path>
               <item name="docker-images" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-images" type="462c0819:PsiDirectoryNode" />
-              <item name="mongodb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-images" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-images" type="462c0819:PsiDirectoryNode" />
-              <item name="mssql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-images" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-images" type="462c0819:PsiDirectoryNode" />
-              <item name="neo4j" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-images" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-images" type="462c0819:PsiDirectoryNode" />
               <item name="ssh" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,10 +212,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539785012720" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539832276151" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -337,7 +304,7 @@
       <workItem from="1538904059149" duration="3897000" />
       <workItem from="1538971509698" duration="1111000" />
       <workItem from="1538994727458" duration="10797000" />
-      <workItem from="1539264038788" duration="18908000" />
+      <workItem from="1539264038788" duration="23790000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;msg.&quot;">
       <created>1538650100088</created>
@@ -406,7 +373,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56173000" />
+    <option name="totallyTimeSpent" value="61055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="987" extended-state="0" />
@@ -759,7 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssh/books_staging.pem">
+    <entry file="file://$PROJECT_DIR$/ssh/onlyuuuuu.pem">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ssh/books_production_key.pem">
@@ -769,10 +736,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ssh/books_staging.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/ssh/citynow-ec2-?.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="312">
+          <caret line="12" column="77" lean-forward="true" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
         </state>
       </provider>
     </entry>
