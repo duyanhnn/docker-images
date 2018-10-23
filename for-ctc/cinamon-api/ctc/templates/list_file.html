@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <title>Directory listing for /</title>
+    <body>
+        <h2>Directory listing for /</h2>
+        <hr>
+        {% for f in files %}
+            <ul>
+                <li><a href="/debug/{{ task_id }}/{{ f }}">{{ f }}</a>
+            </ul>
+        {% endfor %}
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+{
+  "主に使用される方（記名被保険者）の生年月日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Birth date of the person who is mainly used (name insured)" 
+  },
+  "主な運転地域": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": "Main driving area"
+  },
+  "主な使用地（都道府県）": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": "Major use place (prefecture)"
+  },
+  "初度登録（初度検査）年月": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Initial registration (initial inspection) Year / month"
+  },
+  "保険始期日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Insurance start date"
+  },
+  "主な使用地": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": "Major locations"
+  },
+  "⾃動⾞を主に使⽤される場所（使⽤の本拠地）": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": "Place where automatic operation is mainly used (base of use)"
+  },
+  "住所": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": "Street address"
+  },
+  "車検満了日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Vehicle inspection expiration date"
+  },
+  "保険期間": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "初度登録(検査)年月": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Initial registration (inspection) date"
+  },
+  "初度登録年月等": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "First registration year, month, etc."
+  },
+  "終期日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "End date"
+  },
+  "初度登録年月/初度検査年月": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "First registration date / first inspection date"
+  },
+  "始期": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Beginning"
+  },
+  "共済期間": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Mutual aid term"
+  },
+  "初回車検満了日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": "Initial vehicle inspection expiration date"
+  },
+  "初度登録年月（初度検査年月）": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "始期年月日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "車名（型式・車種・初度登録）": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "⾃動⾞を主に使⽤される⽅（記名被保険者）の⽣年⽉⽇": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "地域": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "初度登録": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "終期": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "始期日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "試算するお車（車名・型式・用途車種・初度登録）　": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "記名被保険者　": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "初度登録年月": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "運輸支局の地域": {
+    "ValueTypes": [
+      "ADDRESS"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  },
+  "生年月日": {
+    "ValueTypes": [
+      "DATE"
+    ],
+    "Keys": [],
+    "Explanation": ""
+  }
+}

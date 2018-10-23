@@ -1,0 +1,19 @@
+{% extends "rest_framework/base.html" %}
+
+{% block meta %}
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="robots" content="NONE,NOARCHIVE" />
+  {% if 'upload' not in request.get_full_path and 'ocr' not in request.get_full_path and 'extract' not in request.get_full_path %}
+  <meta http-equiv="refresh" content="30">
+  {% endif %}
+{% endblock %}
+
+{% block title %} Demo FlaxScanner {% endblock %}
+
+{% block branding %}
+    <span>
+        <a href="http://cinnamon.is/" rel="nofollow" class="navbar-brand">
+            FlaxScanner <span class="version">0.1</span>
+        </a>
+    </span>
+{% endblock %}

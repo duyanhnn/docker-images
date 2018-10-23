@@ -1,0 +1,10 @@
+#!/bin/bash
+# KV_PRJ=~/GitHub/flax_bprost/bprost/utils/prj_kv_extract 
+export KV_PRJ=${PWD}/..
+export KV_DATA=$KV_PRJ/data
+export KV_TEST=$KV_PRJ/sample
+export KV_SRC=$KV_PRJ/src
+export KV_SCR=$KV_PRJ/script
+export KV_CACHE=$KV_PRJ/cache
+export PATH="$PATH:$KV_SCR"
+

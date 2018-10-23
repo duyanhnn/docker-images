@@ -1,0 +1,14 @@
+#!/bin/bash
+option="${1}"
+case ${option} in 
+	"-t")	TEST="${2}"
+		python $KV_TEST/kv_test.py -t $TEST
+		;;
+	"")	
+		echo "WARNING : no test_name FOUND. RUN DEMO TEST"	
+		python $KV_TEST/kv_test.py 
+		;;
+	*)
+		python $KV_TEST/kv_test.py -t $option
+		;;
+esac
