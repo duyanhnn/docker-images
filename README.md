@@ -1,4 +1,4 @@
-# docker-images
+# Set Up Environment For Development And Production Deployment Servers
 To grant execute permission for every *.sh file, cd to your root project folder and run the following command:
 
 ```
